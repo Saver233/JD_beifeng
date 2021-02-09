@@ -20,7 +20,7 @@ jobs:
       - name: Checkout
         run: |
           git clone -b master https://github.com/Saver233/jd_scripts .git ~/jd_scripts
-     - name: Use Node.js ${{ matrix.node-version }}
+      - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
