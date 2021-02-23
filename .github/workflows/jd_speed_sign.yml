@@ -38,7 +38,7 @@ jobs:
           npm install
       - name: '运行 【京东极速版】'
         run: |
-          cd ~/scripts
+          cd ~/jd_scripts
           node jd_speed_sign.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
